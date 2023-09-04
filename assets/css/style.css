@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,500;0,600;0,700;1,100;1,500;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 165px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #8b48bf;
+  width: 134px;
+  height: 44px;
+  border-radius: 50px;
+  gap: 10px;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button a {
+  color: #fff;
+  font-size: 13.181px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    flex-direction: row;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  #check {
+    visibility: hidden;
+  }
+
+  .bar-btn {
+    visibility: hidden;
+  }
+}
+
+.tenis-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto;
+  padding: 180px;
+}
+
+.tenis-title {
+  width: 600px;
+}
+
+.tenis-img {
+  width: 540px;
+  height: 461.07px;
+  margin-left: 200px;
+}
+
+.tenis-title-h1 {
+  align-self: stretch;
+  color: #232c50;
+  text-align: right;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.6%; /* 57.3px */
+  letter-spacing: -1.75px;
+  padding: 28px;
+}
+
+.tenis-p {
+  color: #000;
+  text-align: right;
+  font-size: 16.558px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.1%; /* 26.013px */
+  padding: 28px;
+}
+
+.button-tenis-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #8b48bf;
+  width: 134px;
+  height: 44px;
+  border-radius: 50px;
+  gap: 10px;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 450px;
+}
+
+.button-tenis-section a {
+  color: #fff;
+  font-size: 13.181px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-items: center;
+}
+
+.second-section {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  background: #8b48bf;
+  width: 100%;
+  height: 160px;
+}
+
+.second-section h3 {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.6%; /* 41.256px */
+  display: flex;
+  padding: 100px;
+}
+
+.second-section p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 151.1%; /* 24.176px */
+  display: flex;
+  padding: 200px;
+}
