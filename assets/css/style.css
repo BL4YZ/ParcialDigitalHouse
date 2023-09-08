@@ -578,23 +578,59 @@ input {
 
   /* Estilos para la sección "Third" */
   .third-section {
-    padding: 20px;
+    padding: 50px;
   }
 
   .container {
     flex-direction: column;
+    align-items: center; 
+    text-align: center; 
   }
 
   .article {
     margin-left: 0;
+    margin-bottom: 20px; /* Agregar espacio entre las columnas */
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-p {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   .article-summary-p {
-    margin-left: 0;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .article-summary-p h3 {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 8px;
+    height: 43px;
+    margin-top: -10px;
+    border-radius: 50px 0px 0px 50px;
+    background: rgba(139, 72, 191, 0.3);
+  }
+
+  /* Aplicar tamaño y margen a los elementos .article-01 y .article-02 */
+  .article-01,
+  .article-02 {
+    width: 408px;
+    height: 130px;
+    margin-right: 20px; /* Agregar margen a la derecha para separar del borde */
   }
 
   .article-03 {
-    width: 100%;
+    width: 408px;
+    height: 130px;
   }
 
   /* Estilos para la sección "Best Month" */
@@ -661,110 +697,109 @@ input {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   }
 
-/* Estilos para .footer-section */
-.footer-section {
-  background: #1e1e26;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
+  /* Estilos para .footer-section */
+  .footer-section {
+    background: #1e1e26;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Estilos para .logo-img */
-.logo-img img {
-  height: 25px;
-  order: 2; /* Cambiar el orden para que aparezca abajo */
-}
+  /* Estilos para .logo-img */
+  .logo-img img {
+    height: 25px;
+    order: 2; /* Cambiar el orden para que aparezca abajo */
+  }
 
-/* Estilos para .social */
-.social {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column-reverse; /* Invierte el orden verticalmente */
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  order: 1; /* Cambiar el orden para que aparezca arriba */
-}
+  /* Estilos para .social */
+  .social {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse; /* Invierte el orden verticalmente */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    order: 1; /* Cambiar el orden para que aparezca arriba */
+  }
 
-/* Estilos para .social-links */
-.social-links {
-  margin: 0;
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
+  /* Estilos para .social-links */
+  .social-links {
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
 
-/* Estilos para los íconos sociales dentro de .social-links */
-.social-links img {
-  width: 19px;
-  height: 20px;
-}
+  /* Estilos para los íconos sociales dentro de .social-links */
+  .social-links img {
+    width: 19px;
+    height: 20px;
+  }
 
-/* Estilos para .list */
-.list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-}
+  /* Estilos para .list */
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
-/* Estilos para .list-1 y .list-2 */
-.list-1 ul,
-.list-2 ul {
-  list-style: none;
-  padding-right: 90px;
-  padding-left: 100px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  /* Estilos para .list-1 y .list-2 */
+  .list-1 ul,
+  .list-2 ul {
+    list-style: none;
+    padding-right: 90px;
+    padding-left: 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Estilo adicional para los elementos de la lista */
-.list-1 ul li,
-.list-2 ul li {
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+  /* Estilo adicional para los elementos de la lista */
+  .list-1 ul li,
+  .list-2 ul li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-/* Estilos para .input-email y .button-email */
-.input-email,
-.button-email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
+  /* Estilos para .input-email y .button-email */
+  .input-email,
+  .button-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 
-.input-email input {
-  width: 100%;
-}
+  .input-email input {
+    width: 100%;
+  }
 
-.button-email {
-  width: auto;
-  height: 42px;
-  padding: 0 20px;
-  border-radius: 50px;
-  background: #8b48bf;
-}
+  .button-email {
+    width: auto;
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 50px;
+    background: #8b48bf;
+  }
 
-.button-email a {
-  color: #fff;
-  text-decoration: none;
-}
+  .button-email a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-/* Estilos para .copyright */
-.copyright {
-  display: none;
-}
-
+  /* Estilos para .copyright */
+  .copyright {
+    display: none;
+  }
 }
